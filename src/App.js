@@ -6,6 +6,7 @@ import Foo from "./Components/Foo";
 import NotFound from "./Components/NotFound";
 import OnePost from "./Components/OnePost";
 import FormikPost from "./Components/FormikPost";
+import OldFormik from "./Components/OldFormik";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/posts" exact component={Posts} />
             <Route path="/post/:id" exact component={OnePost} />
             <Route path="/formik" exact component={FormikPost} />
+            <Route path="/oldformik" exact component={OldFormik} />
             <Route path="*" exact component={NotFound} />
           </Switch>
         </div>

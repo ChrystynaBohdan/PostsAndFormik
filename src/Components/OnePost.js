@@ -12,8 +12,8 @@ const OnePost = () => {
     axios
       .get(`https://jsonplaceholder.typicode.com/posts/${id}`, {})
       .then(function (response) {
-        const updatedValue = {};
-        setPost({ ...updatedValue, ...response.data }); // why copy empty object?  https://flaviocopes.com/react-usestate-object/
+        // const updatedValue = {};
+        setPost({ ...response.data }); // why copy empty object?  https://flaviocopes.com/react-usestate-object/
       })
       .catch(function (error) {
         console.log(error);
